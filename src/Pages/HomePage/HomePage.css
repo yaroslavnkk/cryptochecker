@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+body {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rethink Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .crypto-table-container {
+    padding: 20px;
+    background-color: #1e2533;
+    color: white;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #78b3ce;
+  }
+  
+  .crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242b37;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .crypto-table th,
+  .crypto-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3a4655;
+  }
+  
+  .crypto-table th {
+    background-color: #2c3445;
+    color: #9aa4b6;
+  }
+  
+  .crypto-table tr:hover {
+    background-color: #2c3445;
+  }
+  
+  .coin-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .coin-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .coin-name {
+    font-weight: bold;
+  }
+  
+  .coin-symbol {
+    color: #9aa4b6;
+    font-size: 12px;
+  }
+  
+  .positive-change {
+    color: #4caf50;
+  }
+  
+  .negative-change {
+    color: #f44336;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  

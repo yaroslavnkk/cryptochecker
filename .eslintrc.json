@@ -14,8 +14,7 @@
       "react/jsx-no-duplicate-props": "error", 
       "react/self-closing-comp": "warn",             
       "prefer-const": "error",         
-      "semi": ["error", "always"],               
-      "indent": ["error", 2],                    
+      "semi": ["error", "always"],                           
       "quotes": ["error", "single"],             
       "curly": ["error", "all"],             
       "no-multiple-empty-lines": ["warn", {     

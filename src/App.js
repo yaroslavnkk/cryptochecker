@@ -1,8 +1,12 @@
-
-
+import Header from './Components/Header/Header.jsx';
+import './App.css';
+import HomePage from './Pages/HomePage/HomePage.jsx';
 function App() {
   return (
-    <h1>Hello</h1>
+    <>
+    <Header />
+    <HomePage />
+    </>
   );
 }
 
