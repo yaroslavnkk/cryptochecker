@@ -4,7 +4,7 @@ function useDisplayData(){
     const [cryptoData, setCryptoData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-  
+    const API_KEY = process.env.API_KEY;
     useEffect(() => {
       const options = {
         method: 'GET',
@@ -16,7 +16,7 @@ function useDisplayData(){
           page: 1,
           sparkline: false, 
         },
-        headers: { accept: 'application/json', 'x-pro-api-key': 'CG-ZhuyBHX1D2Aau147FmJyR7oW' }
+        headers: { accept: 'application/json', 'x-pro-api-key': API_KEY }
       };
   
       axios
