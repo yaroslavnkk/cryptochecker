@@ -1,11 +1,18 @@
-import Header from './Components/Header/Header.jsx';
 import './App.css';
 import HomePage from './Pages/HomePage/HomePage.jsx';
+import CoinInfo from './Pages/CoinInfoPage/CoinInfo.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Exchanges from './Pages/ExchangesPage/Exchanges.jsx';
 function App() {
   return (
     <>
-    <Header />
-    <HomePage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/coin/:coinId" element={<CoinInfo />} />
+        <Route path="/exchanges" element={<Exchanges/>} />
+      </Routes>
+    </Router>
     </>
   );
 }

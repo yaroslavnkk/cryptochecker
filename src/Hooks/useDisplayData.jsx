@@ -4,7 +4,7 @@ function useDisplayData(){
     const [cryptoData, setCryptoData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const API_KEY = process.env.API_KEY;
+    const API_KEY = process.env.REACT_APP_API_KEY;
     useEffect(() => {
       const options = {
         method: 'GET',

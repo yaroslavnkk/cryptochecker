@@ -51,6 +51,9 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    &:hover{
+      cursor: pointer;
+    }
   }
   
   .coin-image {

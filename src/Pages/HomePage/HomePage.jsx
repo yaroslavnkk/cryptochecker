@@ -1,6 +1,12 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import useDisplayData from '../../Hooks/useDisplayData.jsx';
+import SearchBar from '../../Components/SearchBar/SearchBar.jsx';
+import Header from '../../Components/Header/Header.jsx';
+import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 const HomePage = () => {
+    const navigate = useNavigate();
     const [cryptoData,loading,error] = useDisplayData();
     if (loading) {
         return <div className="loading">Loading...</div>;
@@ -9,8 +15,11 @@ const HomePage = () => {
         return <div className="error">{error}</div>;
     } 
     return (
+      <>
+       <Header />
       <div className="crypto-table-container">
         <h1 className="title">Cryptocurrency Market</h1>
+        <SearchBar />
         <table className="crypto-table">
           <thead>
             <tr>
@@ -27,7 +36,7 @@ const HomePage = () => {
               <tr key={crypto.id}>
                 <td>{index + 1}</td>
                 <td>
-                  <div className="coin-info">
+                  <div className="coin-info" onClick={() => {navigate(`/coin/${crypto.id}`);}}>
                     <img
                       src={crypto.image}
                       alt={crypto.name}
@@ -57,6 +66,8 @@ const HomePage = () => {
           </tbody>
         </table>
       </div>
+      </>
+     
     );
   };
   
