@@ -1,0 +1,45 @@
+.exchange-container {
+    padding: 20px;
+    background-color: #1e2533;
+    color: white;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .exchange-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242b37;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .exchange-table th,
+  .exchange-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3a4655;
+  }
+  .exchange-table th {
+    background-color: #2c3445;
+    color: #9aa4b6;
+  }
+  .exchange-table td{
+    color: white;
+  }
+  .exchange-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .exchange-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .exchange-name {
+    font-weight: bold;
+  }

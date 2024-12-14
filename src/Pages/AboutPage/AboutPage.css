@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rethink Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-page-container {
+  padding: 20px;
+  background-color: #1e2533;
+  color: white;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #78b3ce;
+  font-size: 2rem;
+}
+
+.about-paragraph {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.about-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+}
