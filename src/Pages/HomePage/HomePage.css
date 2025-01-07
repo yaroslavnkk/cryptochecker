@@ -85,5 +85,13 @@ body {
     margin-top: 20px;
     font-size: 18px;
   }
+  .save-button{
+    background-color: #9aa4b6;
+    font-family: "Rethink Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+  }
 
   

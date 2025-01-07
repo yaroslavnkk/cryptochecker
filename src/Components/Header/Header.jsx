@@ -13,6 +13,7 @@ export const Header = () => {
             <li className="nav-link" onClick={() => {navigate('/');}}>Home</li>
             <li className='nav-link' onClick={() => {navigate('/about');}}>About</li>
             <li className="nav-link" onClick={() => {navigate('/exchanges');}}>Exchanges</li>
+            <li className='nav-link' onClick={() => {navigate('/saved');}}>Saved</li>
           </ul>
         </nav>
       </div>
